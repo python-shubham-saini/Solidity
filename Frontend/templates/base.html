@@ -15,9 +15,9 @@
         <a href="/"> <img id ="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vytSJKl-6WESJl0U4nQiEtFPoxW1hHzXWA&usqp=CAU"> </a>
         
         <ul>
-            <li><a class="{% if active=='home' %}active{%endif %}" href="/">Home</a></li>
-            <li><a class="{% if active=='block' %}active{%endif %}" href="{{ url_for('deposit') }}" > deposit </a></li>
-            <li><a class="{% if active=='Transactions' %}active{%endif %}" href="{{ url_for('FundMe') }}" >Fund Me</a></li>
+            <li><a class="{% if active=='home' %}active{%endif %}" href="/">DEFI</a></li>
+            <li><a class="{% if active=='block' %}active{%endif %}" href="{{ url_for('depositWithdraw') }}" > deposit/withdraw </a></li>
+            <li><a class="{% if active=='Transactions' %}active{%endif %}" href="{{ url_for('AddFund') }}" >Add Fund</a></li>
         </ul>
 
         {% block content %} {% endblock %}
